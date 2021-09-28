@@ -1,3 +1,3 @@
 ## The Surprising Effectiveness of Representation Learning for Visual Imitation
 
-<a href="{https://www.youtube.com/watch?v=oQjdB2_RlGE}" title="Video Link"><img src="{https://drive.google.com/file/d/1ZHibQ5zPuOL6QYOcaguuy0Du2o-7G810/view?usp=sharing}" alt="Video Link" /></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oQjdB2_RlGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
