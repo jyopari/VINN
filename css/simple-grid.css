@@ -31,6 +31,24 @@ img {
   color: #333447;
   line-height: 1.5;
 }
+.auto-resizable-iframe {
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
 
 /* TYPOGRAPHY */
 .line {
