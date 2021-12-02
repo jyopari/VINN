@@ -122,7 +122,7 @@
 
     <p style="line-height:25px;">While  visual  imitation  learning  offers  one  of  themost effective ways of learning from visual demonstrations, gen-eralizing from them requires either hundreds of diverse demon-strations, task specific priors, or large, hard-to-train parametricmodels.  One  reason  such  complexities  arise  is  because  standardvisual  imitation  frameworks  try  to  solve  two  coupled  problemsat  once:  learning  a  succinct  but  good  representation  from  thediverse  visual  data,  while  simultaneously  learning  to  associatethe  demonstrated  actions  with  such  representations.  Such  jointlearning causes an interdependence between these two problems,which  often  results  in  needing  large  amounts  of  demonstrationsfor  learning.  To  address  this  challenge,  we  instead  propose  todecouple   representation   learning   from   behavior   learning   forvisual  imitation.  First,  we  learn  a  visual  representation  encoderfrom  offline  data  using  standard  supervised  and  self-supervisedlearning   methods.   Once   the   representations   are   trained,   weuse  non-parametric  Locally  Weighted  Regression  to  predict  theactions. We experimentally show that this simple decoupling im-proves the performance of visual imitation models on both offlinedemonstration datasets and real-robot door opening compared toprior  work  in  visual  imitation. </p>
 
-    <img src="files/method.png" alt="VINN method">
+    <img src="files/method.png" width = "600" alt="VINN method">
 
     <hr>
     <h2 align=center>Demonstrations and Execution</h2>
