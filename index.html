@@ -29,7 +29,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
 
-  <title>The Surprising Effectiveness of Representation Learning for Visual Imitationg</title>
+  <title>The Surprising Effectiveness of Representation Learning for Visual Imitation</title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -46,7 +46,7 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
-                <name class="paper_title">The Surprising Effectiveness of Representation Learning for Visual Imitationg</name>
+                <name class="paper_title">The Surprising Effectiveness of Representation Learning for Visual Imitation</name>
               </p>
               
               <p></p>
@@ -59,7 +59,7 @@
                       <td align=center width=180px>
                       <center><span style="font-size:15px"><a href="" target="_blank" class="authors" style="color:black">Jyothish Pari</a></span></center></td>
                       <td align=center width=180px>
-                      <center><span  ><a href="" target="_blank" class="authors" style="color:black">Mahi Shafiullah</a></span></center></td>
+                      <center><span  ><a href="" target="_blank" class="authors" style="color:black"></a>Mahi Shafiullah </span></center></td>
                       <td align=center width=180px>
                       <center><span  ><a href="" target="_blank" class="authors" style="color:black">Sridhar Arunachalam</a></span></center></td>
                       <td align=center width=180px>
@@ -67,11 +67,11 @@
                   <tr/>
                   <tr>
                       <td align=center width=180px>
-                      <center><span class="affiliations">NYU</span></center></td>
+                      <center><span class="affiliations">UC Berkeley</span></center></td>
                         <td align=center width=180px>
                       <center><span class="affiliations">NYU</span></center></td>
                         <td align=center width=180px>
-                      <center><span class="affiliations">NYU</span></center></td>
+                      <center><span class="affiliations">UC Berkeley</span></center></td>
                         <td align=center width=180px>
                       <center><span class="affiliations">NYU</span></center></td>
 
@@ -80,15 +80,6 @@
         </table>
       </td> 
     </tr></tbody>
-          
-    <h2 align="center">Abstract</h2>
-
-    <p style="line-height:25px;">While  visual  imitation  learning  offers  one  of  themost effective ways of learning from visual demonstrations, gen-eralizing from them requires either hundreds of diverse demon-strations, task specific priors, or large, hard-to-train parametricmodels.  One  reason  such  complexities  arise  is  because  standardvisual  imitation  frameworks  try  to  solve  two  coupled  problemsat  once:  learning  a  succinct  but  good  representation  from  thediverse  visual  data,  while  simultaneously  learning  to  associatethe  demonstrated  actions  with  such  representations.  Such  jointlearning causes an interdependence between these two problems,which  often  results  in  needing  large  amounts  of  demonstrationsfor  learning.  To  address  this  challenge,  we  instead  propose  todecouple   representation   learning   from   behavior   learning   forvisual  imitation.  First,  we  learn  a  visual  representation  encoderfrom  offline  data  using  standard  supervised  and  self-supervisedlearning   methods.   Once   the   representations   are   trained,   weuse  non-parametric  Locally  Weighted  Regression  to  predict  theactions. We experimentally show that this simple decoupling im-proves the performance of visual imitation models on both offlinedemonstration datasets and real-robot door opening compared toprior  work  in  visual  imitation. </p>
-
-
-    
-          
-          
   </table>
 
   <table align=center width=540px cellpadding=0 cellspacing=0>
@@ -96,24 +87,14 @@
         <td align=center width=180px>
            <a href="https://arxiv.org/abs/2107.09046" class="smol">Paper |</a>
            <!-- <a href="https://github.com/sarahisyoung/Playful-Interactions-for-Representation-Learning" class="smol">Code |</a> -->
-           <!-- <a href="https://www.dropbox.com/sh/4wcq3vwwgi7gggi/AADKHIRP3O5wsXpSoBpOKwYwa?dl=0" class="smol">Data |</a> -->
-          <a href="https://www.dropbox.com/sh/gbh3wtj7mtg4gv8/AAATlBML8mvfRJAJfAggwurGa?dl=0" class="smol">Code</a>
+          <a href="https://www.dropbox.com/sh/4wcq3vwwgi7gggi/AADKHIRP3O5wsXpSoBpOKwYwa?dl=0" class="smol">Data |</a>
+          <a href="https://www.dropbox.com/sh/gbh3wtj7mtg4gv8/AAATlBML8mvfRJAJfAggwurGa?dl=0" class="smol">Models</a>
         </td>
           
 
       </tr>
   </table>
- <table style="width:1220px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-        
-
-  </tbody></table>
-
-        
-      </td>
-    </tr>
-  </table>
   
   
       
@@ -132,7 +113,55 @@
 </div>
 
         
- 
+  <table style="width:1220px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          
+    <h2 align="center">Abstract</h2>
+
+    <p style="line-height:25px;">While  visual  imitation  learning  offers  one  of  themost effective ways of learning from visual demonstrations, gen-eralizing from them requires either hundreds of diverse demon-strations, task specific priors, or large, hard-to-train parametricmodels.  One  reason  such  complexities  arise  is  because  standardvisual  imitation  frameworks  try  to  solve  two  coupled  problemsat  once:  learning  a  succinct  but  good  representation  from  thediverse  visual  data,  while  simultaneously  learning  to  associatethe  demonstrated  actions  with  such  representations.  Such  jointlearning causes an interdependence between these two problems,which  often  results  in  needing  large  amounts  of  demonstrationsfor  learning.  To  address  this  challenge,  we  instead  propose  todecouple   representation   learning   from   behavior   learning   forvisual  imitation.  First,  we  learn  a  visual  representation  encoderfrom  offline  data  using  standard  supervised  and  self-supervisedlearning   methods.   Once   the   representations   are   trained,   weuse  non-parametric  Locally  Weighted  Regression  to  predict  theactions. We experimentally show that this simple decoupling im-proves the performance of visual imitation models on both offlinedemonstration datasets and real-robot door opening compared toprior  work  in  visual  imitation. </p>
+
+
+    <hr>
+    <h2 align=center>Playful Interaction Data</h2>
+    <p align=center>These are some examples of collected playful interaction data. We collected ~2 hours of playful interaction data, which is available <a href="https://www.dropbox.com/sh/4wcq3vwwgi7gggi/AADKHIRP3O5wsXpSoBpOKwYwa?dl=0" class="smol">here</a>.</p>
+
+    <table align=center width=540px cellpadding=10 cellspacing=10>
+                  <tr>
+                    <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_1.mov" type="video/mp4"></center></video></td>
+                    <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_2.mov" type="video/mp4"></center></video></td>
+                    <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_5.mp4" type="video/mp4"></center></video></td>
+                  <tr/>
+                  <tr>
+                    <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_4.mp4" type="video/mp4"></center></video></td>
+                    <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_3.mov" type="video/mp4"></center></video></td>
+                  <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_6.mp4" type="video/mp4"></center></video></td>
+                  
+                  <tr/>
+                 
+      </table>
+
+    <hr>
+    Paper
+
+  </tbody></table>
+
+        
+      </td>
+    </tr>
+  </table>
   
 </body>
 
