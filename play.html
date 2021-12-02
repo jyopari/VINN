@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104480971-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-104480971-1');
+  </script>
+  <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       // if(e.style.display == 'block')
+       //    e.style.display = 'none';
+       // else
+       //    e.style.display = 'block';
+        if (e.style.display == 'none')
+           e.style.display = 'inline';
+       else
+           e.style.display = 'none';
+    }
+//-->
+</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+  <title>Playful Interactions for Representation Learning</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="paper_stylesheet.css">
+
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name class="paper_title">Playful Interactions for Representation Learning</name>
+              </p>
+              
+              <p></p>
+                <br>
+                <br>
+
+              <!-- Authors and affiliations table  -->
+              <table align=center width=540px cellpadding=0 cellspacing=0>
+                  <tr>
+                      <td align=center width=180px>
+                      <center><span style="font-size:15px"><a href="" target="_blank" class="authors" style="color:black">Sarah Young</a></span></center></td>
+                      <td align=center width=180px>
+                      <center><span  ><a href="" target="_blank" class="authors" style="color:black">Jyothish Pari</a></span></center></td>
+                      <td align=center width=180px>
+                      <center><span  ><a href="" target="_blank" class="authors" style="color:black">Pieter Abbeel</a></span></center></td>
+                      <td align=center width=180px>
+                      <center><span class="authors"><a href="" target="_blank" class="authors" style="color:black">Lerrel Pinto</a></span></center></td>
+                  <tr/>
+                  <tr>
+                      <td align=center width=180px>
+                      <center><span class="affiliations">UC Berkeley</span></center></td>
+                        <td align=center width=180px>
+                      <center><span class="affiliations">NYU</span></center></td>
+                        <td align=center width=180px>
+                      <center><span class="affiliations">UC Berkeley</span></center></td>
+                        <td align=center width=180px>
+                      <center><span class="affiliations">NYU</span></center></td>
+
+                  <tr/>
+               
+        </table>
+      </td> 
+    </tr></tbody>
+  </table>
+
+  <table align=center width=540px cellpadding=0 cellspacing=0>
+      <tr align=center>
+        <td align=center width=180px>
+           <a href="https://arxiv.org/abs/2107.09046" class="smol">Paper |</a>
+           <!-- <a href="https://github.com/sarahisyoung/Playful-Interactions-for-Representation-Learning" class="smol">Code |</a> -->
+          <a href="https://www.dropbox.com/sh/4wcq3vwwgi7gggi/AADKHIRP3O5wsXpSoBpOKwYwa?dl=0" class="smol">Data |</a>
+          <a href="https://www.dropbox.com/sh/gbh3wtj7mtg4gv8/AAATlBML8mvfRJAJfAggwurGa?dl=0" class="smol">Models</a>
+        </td>
+          
+
+      </tr>
+  </table>
+
+  
+  
+      
+  
+
+
+  </a>
+
+  <div align="center">
+  <!-- <video height="280" controls> -->
+  <!-- <source src="pirl_images/corl.mp4" type="video/mp4"> -->
+    <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P7c-RDiQrhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- Your browser does not support the video tag. -->
+<!-- </video> -->
+</div>
+
+        
+  <table style="width:1220px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          
+    <h2 align="center">Abstract</h2>
+
+    <p style="line-height:25px;">One of the key challenges in visual imitation learning is collecting large amounts of expert demonstrations for a given task. While methods for collecting human demonstrations are becoming easier with teleoperation methods and the use of low-cost assistive tools, we often still require 100-1000 demonstrations for every task to learn a visual representation and policy. To address this, we turn to an alternate form of data that does not require task-specific demonstrations -- play. Playing is a fundamental method children use to learn a set of skills and behaviors and visual representations in early learning. Importantly, play data is diverse, task-agnostic, and relatively cheap to obtain. In this work, we propose to use playful interactions in a self-supervised manner to learn visual representations for downstream tasks. We collect 2 hours of playful data in 19 diverse environments and use self-predictive learning to extract visual representations. Given these representations, we train policies using imitation learning for two downstream tasks: Pushing and Stacking. We demonstrate that our visual representations generalize better than standard behavior cloning and can achieve similar performance with only half the number of required demonstrations. Furthermore, our representations, which are trained from scratch, compare favorably against ImageNet pretrained representations. Finally, we provide an experimental analysis on the effects of different pretraining modes on downstream task learning. </p>
+
+
+    <hr>
+    <h2 align=center>Playful Interaction Data</h2>
+    <p align=center>These are some examples of collected playful interaction data. We collected ~2 hours of playful interaction data, which is available <a href="https://www.dropbox.com/sh/4wcq3vwwgi7gggi/AADKHIRP3O5wsXpSoBpOKwYwa?dl=0" class="smol">here</a>.</p>
+
+    <table align=center width=540px cellpadding=10 cellspacing=10>
+                  <tr>
+                    <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_1.mov" type="video/mp4"></center></video></td>
+                    <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_2.mov" type="video/mp4"></center></video></td>
+                    <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_5.mp4" type="video/mp4"></center></video></td>
+                  <tr/>
+                  <tr>
+                    <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_4.mp4" type="video/mp4"></center></video></td>
+                    <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_3.mov" type="video/mp4"></center></video></td>
+                  <td align=center width=190px>
+                      <center><video height=180px controls>
+                      <source src="play_images/sample_6.mp4" type="video/mp4"></center></video></td>
+                  
+                  <tr/>
+                 
+      </table>
+
+    <hr>
+    Paper
+
+  </tbody></table>
+
+        
+      </td>
+    </tr>
+  </table>
+  
+</body>
+
+</html>
+
+
+
