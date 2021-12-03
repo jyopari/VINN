@@ -272,6 +272,13 @@ p {
   }
 }
 
+.code {
+  /* background-color: lightgray; */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  overflow-wrap: normal;
+}
+
 @media only screen and (min-width: 60em) { /* 960px */
   .container {
     width: 75%;
