@@ -3,18 +3,6 @@
 
 This is an original PyTorch implementation of Visual Imitation through Nearest Neighbors, or VINN from the paper [The Surprising Effectiveness of Representation Learning for Visual Imitation](https://jyopari.github.io/VINN/)
 
-If you use this code in your research project please cite us as: 
-```
-@misc{VINN,
-  author = {Pari, Jyo and Shafiullah, Mahi and Arunachalam, Sridhar and Pinto, Lerrel},
-  title = {Visual Imitation through Nearest Neighbors (VINN) implementation},
-  year = {2021},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/jyopari/VINN/tree/main}},
-}
-```
-
 
 ## Execution on Real Robot
  <p align="center">
@@ -188,3 +176,16 @@ python train_BC.py	--bc_model BC_Full \
 			--save_dir /path/to/chkpts/
 ```
 </details>
+
+If you use this code in your research project please cite us as: 
+```
+@misc{VINN,
+  author = {Pari, Jyo and Shafiullah, Mahi and Arunachalam, Sridhar and Pinto, Lerrel},
+  title = {Visual Imitation through Nearest Neighbors (VINN) implementation},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/jyopari/VINN/tree/main}},
+}
+```
+
