@@ -26,11 +26,14 @@ class HandleDataset(Dataset):
         self.path_dict = defaultdict(list)
         self.frame_index = defaultdict(int)
 
-        self.preprocess = T.Compose([T.ToTensor(),
-                                    T.Resize((self.params['img_size'],self.params['img_size'])),
-                                    T.Normalize(
-                                    mean=[0.485, 0.456, 0.406],
-                                    std=[0.229, 0.224, 0.225])])
+        self.preprocess = T.Compose([
+            T.ToTensor(),
+            T.Resize((self.params.img_size, self.params.img_size)),
+            T.Normalize(
+                mean=[0.485, 0.456, 0.406],
+                std=[0.229, 0.224, 0.225],
+            )
+        ])
 
         self.extract_data(partial)
 
