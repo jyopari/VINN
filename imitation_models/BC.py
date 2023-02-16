@@ -54,8 +54,6 @@ class BC:
         sys.path.append(params['root_dir'] + 'dataloaders')
         from run_model import Encoder
         from HandleDataset import HandleDataset
-        from HandleDataset_temporal import HandleDatasetTemporal
-        from PushDataset_temporal import PushDatasetTemporal
         from PushDataset import PushDataset
         encoder = Encoder(params)
 
