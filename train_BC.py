@@ -1,4 +1,5 @@
 import sys
+import os
 import numpy as np
 import argparse
 
@@ -61,6 +62,7 @@ def run_bc_model(params):
         all_stds.append(std)
 
     suffix = f"{params['dataset']}_{params['pretrained']}.txt"
+    os.makedirs("../results", exist_ok=True)
     np.savetxt(f"../results/{params['bc_model']}_losses_{suffix}", np.array(all_losses), delimiter=",")
     np.savetxt(f"../results/{params['bc_model']}_means_{suffix}", np.array(all_means), delimiter=",")
     np.savetxt(f"../results/{params['bc_model']}_stds_{suffix}", np.array(all_stds), delimiter=",")

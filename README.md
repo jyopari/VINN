@@ -58,7 +58,7 @@ python representation_models/BYOL.py	--batch_size 168 \
 <details><summary>BC on Representations - Handle Dataset/Door Opening</summary>
 
 ```
-python train_BC.py	--bc_model BC \
+python train_BC.py	--bc_model BC_rep \
 			--t 0 \
 			--batch_size 256 \
 			--root_dir /path/to/non_parametric_imitation/ \
@@ -84,7 +84,7 @@ python train_BC.py	--bc_model BC \
 <details><summary>BC End to End - Handle Dataset/Door Opening</summary>
 
 ```
-python train_BC.py	--bc_model BC_Full \
+python train_BC.py	--bc_model BC_end_to_end \
 			--t 0 \
 			--batch_size 64 \
 			--root_dir /path/to/non_parametric_imitation/ \
@@ -127,7 +127,7 @@ python representation_models/BYOL.py	--batch_size 168 \
 <details><summary>BC on Representations - Push/Stack Dataset</summary>
 
 ```
-python train_BC.py	--bc_model BC \
+python train_BC.py	--bc_model BC_rep \
 			--t 0 \
 			--batch_size 256 \
 			--root_dir /path/to/non_parametric_imitation/ \
@@ -153,7 +153,7 @@ python train_BC.py	--bc_model BC \
 <details><summary>BC End to End - Push/Stack Dataset</summary>
 
 ```
-python train_BC.py	--bc_model BC_Full \
+python train_BC.py	--bc_model BC_end_to_end \
 			--t 0 \
 			--batch_size 64 \
 			--root_dir /path/to/non_parametric_imitation/ \

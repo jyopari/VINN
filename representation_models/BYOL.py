@@ -12,6 +12,7 @@ import sys
 import wandb
 import random
 import argparse
+from tqdm import tqdm
 from byol_pytorch import BYOL
 
 parser = argparse.ArgumentParser()
@@ -80,7 +81,7 @@ if __name__ == '__main__':
 
     epochs = params['epochs']
 
-    for epoch in range(epochs):
+    for epoch in tqdm(range(epochs)) q:
         epoch_loss = 0
         for i, data in enumerate(dataLoader, 0):
             if(params['gpu'] == 1):
